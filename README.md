@@ -1,4 +1,4 @@
-#Implementing Web Automation features using like below:
+#Web Automation using feature like below:
 #TestNG Framework, Design pattern: POM with Page Factory
 #Application Login using separate respective Page Class, respective Test Class
 #Multiple Test Case Writing by integrating Multiple Web Page
