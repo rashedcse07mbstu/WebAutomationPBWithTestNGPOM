@@ -9,9 +9,10 @@ import java.time.Duration;
 
 public class GeneralUtils {
     public static final int WAIT_TIME = 30;
+    public static final int WAIT_FOR_LONG_TIME = 100;
     public static WebDriver driver;
 
-    public static void getImplicitWait() {
+    public static void implicitWaitForAllElementStable() {
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(WAIT_TIME));
     }
 
@@ -21,7 +22,7 @@ public class GeneralUtils {
      * @param driver
      * @param element
      */
-    public void waitForElementVisibility(WebDriver driver, By element) {
+    public void explicitWaitForElementVisibility(WebDriver driver, By element) {
         try {
             WebDriverWait waitForElementVisibility = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME));
             waitForElementVisibility.until(ExpectedConditions.visibilityOfElementLocated(element));
@@ -36,7 +37,7 @@ public class GeneralUtils {
      * @param driver
      * @param element
      */
-    public void waitForElementClickable(WebDriver driver, By element) {
+    public void explicitWaitForElementClickable(WebDriver driver, By element) {
         try {
             WebDriverWait waitForElementClickable = new WebDriverWait(driver, Duration.ofSeconds(WAIT_TIME));
             waitForElementClickable.until(ExpectedConditions.visibilityOfElementLocated(element));
@@ -44,4 +45,22 @@ public class GeneralUtils {
             e.printStackTrace();
         }
     }
+
+    /**
+     * long wait For Element clickable on the webpage
+     *
+     * @param driver
+     * @param element
+     */
+
+    public void explicitWaitForLongTimeElementVisibility(WebDriver driver, By element) {
+        try {
+            WebDriverWait waitForLongTimeElementVisibility = new WebDriverWait(driver, Duration.ofSeconds(WAIT_FOR_LONG_TIME));
+            waitForLongTimeElementVisibility.until(ExpectedConditions.visibilityOfElementLocated(element));
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
+
+
 }
