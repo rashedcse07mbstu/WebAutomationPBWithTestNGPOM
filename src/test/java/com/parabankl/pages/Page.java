@@ -2,7 +2,7 @@ package com.parabankl.pages;
 
 import org.openqa.selenium.WebDriver;
 
-public class Page {
+public abstract class Page {
     public static WebDriver driver;
 
     //Method which will return every page Class
