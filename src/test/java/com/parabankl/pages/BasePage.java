@@ -9,16 +9,13 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public abstract class BasePage {
+public class BasePage {
     public WebDriver driver;
 
     //Constructor
     BasePage(WebDriver driver) {
         this.driver = driver;
     }
-
-    //get every Page title
-    public abstract String getPageTitle();
 
     //Input value in Input field
     public void inputText(By element, String text) {
