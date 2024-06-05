@@ -5,6 +5,9 @@ import org.openqa.selenium.WebDriver;
 public abstract class Page {
     public static WebDriver driver;
 
+    //get every Page title
+    public abstract String getPageTitle();
+
     //Method which will return every page Class
     public <T extends BasePage> T getInstance(Class<T> pageClass) {
         try {
