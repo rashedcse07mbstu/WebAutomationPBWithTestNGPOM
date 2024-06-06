@@ -15,7 +15,6 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ParaBankBaseTest {
-
     public WebDriver driver;
     private Properties properties;
     protected String projectDir = System.getProperty("user.dir");
@@ -76,10 +75,9 @@ public class ParaBankBaseTest {
         page = new BasePage(driver);
     }
 
+    //Close browser session
     @AfterMethod
     public void tearDown() {
         driver.quit();
     }
-
-
 }
