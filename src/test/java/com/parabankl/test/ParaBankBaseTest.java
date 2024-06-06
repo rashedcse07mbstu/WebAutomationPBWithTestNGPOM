@@ -75,6 +75,7 @@ public class ParaBankBaseTest {
         page = new BasePage(driver);
     }
 
+    //Close browser session
     @AfterMethod
     public void tearDown() {
         driver.quit();
