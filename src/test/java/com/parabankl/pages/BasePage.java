@@ -13,7 +13,7 @@ public class BasePage {
     public WebDriver driver;
 
     //Constructor
-    BasePage(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
