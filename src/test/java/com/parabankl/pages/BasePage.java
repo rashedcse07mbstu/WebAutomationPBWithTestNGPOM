@@ -9,7 +9,9 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
+
 public class BasePage extends Page{
+
     public WebDriver driver;
 
     //Constructor
