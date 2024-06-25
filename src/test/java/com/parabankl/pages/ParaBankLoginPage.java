@@ -24,7 +24,7 @@ public class ParaBankLoginPage extends BasePage {
 
     public AccountOverviewPage clickLoginBtn() {
         clickBtn(loginBtn);
-        return getInstance(AccountOverviewPage.class);
+        return new AccountOverviewPage();
     }
 
 }
