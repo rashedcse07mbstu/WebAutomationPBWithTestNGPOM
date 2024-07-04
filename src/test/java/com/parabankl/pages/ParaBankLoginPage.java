@@ -27,4 +27,9 @@ public class ParaBankLoginPage extends BasePage {
         return new AccountOverviewPage();
     }
 
+    @Override
+    public String getPageTitle() {
+        return "ParaBank | Customer Created";
+    }
+
 }
