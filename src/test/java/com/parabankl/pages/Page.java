@@ -9,7 +9,7 @@ public abstract class Page {
     public abstract String getPageTitle();
 
     //Method which will return every page Class
-    public <T extends BasePage> T getInstance(Class<T> pageClass) {
+    public <T extends BasePage> AccountOverviewPage getInstance(Class<AccountOverviewPage> pageClass) {
         try {
             return pageClass.getDeclaredConstructor(WebDriver.class).newInstance(this.driver);
         } catch (Exception e) {

@@ -9,11 +9,11 @@ import java.io.IOException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class BasePage {
+public class BasePage extends Page {
     public WebDriver driver;
 
     //Constructor
-    BasePage(WebDriver driver) {
+    public BasePage(WebDriver driver) {
         this.driver = driver;
     }
 
@@ -62,5 +62,10 @@ public class BasePage {
         File fileDestination = new File(destination);
         FileUtils.copyFile(new File(source), fileDestination);
         return destination;
+    }
+
+    @Override
+    public String getPageTitle() {
+        return driver.getTitle();
     }
 }
