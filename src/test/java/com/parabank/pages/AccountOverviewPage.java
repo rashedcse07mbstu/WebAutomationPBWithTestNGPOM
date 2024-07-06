@@ -1,4 +1,4 @@
-package com.parabankl.pages;
+package com.parabank.pages;
 
 public class AccountOverviewPage {
 }

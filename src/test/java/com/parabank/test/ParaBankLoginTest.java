@@ -1,7 +1,7 @@
-package com.parabankl.test;
+package com.parabank.test;
 
-import com.parabankl.pages.AccountOverviewPage;
-import com.parabankl.pages.ParaBankLoginPage;
+import com.parabank.pages.AccountOverviewPage;
+import com.parabank.pages.ParaBankLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 

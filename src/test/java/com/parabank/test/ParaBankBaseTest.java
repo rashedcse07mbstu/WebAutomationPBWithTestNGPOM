@@ -1,6 +1,6 @@
-package com.parabankl.test;
+package com.parabank.test;
 
-import com.parabankl.pages.BasePage;
+import com.parabank.pages.BasePage;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;

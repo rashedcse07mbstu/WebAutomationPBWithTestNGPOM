@@ -1,4 +1,4 @@
-package com.parabankl.test;
+package com.parabank.test;
 
 public class AccountOverviewTest {
 }
