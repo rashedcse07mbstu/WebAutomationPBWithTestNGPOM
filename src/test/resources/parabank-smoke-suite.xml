@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="XPTrack Project's Regression Suite">
-    <test name="xptrack-Test-Automation">
+<suite name="ParaBank Project's Regression Suite">
+    <test name="ParaBank-Test-Automation">
         <classes>
             <class name="com.parabank.test.ParaBankLoginTest"/>
         </classes>
