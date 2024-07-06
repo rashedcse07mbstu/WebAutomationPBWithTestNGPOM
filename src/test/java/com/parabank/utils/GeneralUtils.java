@@ -1,4 +1,4 @@
-package com.parabankl.utils;
+package com.parabank.utils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -61,6 +61,4 @@ public class GeneralUtils {
             e.printStackTrace();
         }
     }
-
-
 }

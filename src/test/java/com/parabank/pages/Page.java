@@ -1,4 +1,4 @@
-package com.parabankl.pages;
+package com.parabank.pages;
 
 import org.openqa.selenium.WebDriver;
 

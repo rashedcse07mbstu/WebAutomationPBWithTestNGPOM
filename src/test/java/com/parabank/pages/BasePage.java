@@ -1,4 +1,4 @@
-package com.parabankl.pages;
+package com.parabank.pages;
 
 import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.*;
