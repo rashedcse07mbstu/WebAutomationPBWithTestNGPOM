@@ -5,6 +5,10 @@ import org.openqa.selenium.WebDriver;
 public abstract class Page {
     public static WebDriver driver;
 
+    public Page(WebDriver driver) {
+        this.driver = driver;
+    }
+
     //get every Page title
     public abstract String getPageTitle();
 

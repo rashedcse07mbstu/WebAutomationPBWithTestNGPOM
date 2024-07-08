@@ -15,13 +15,13 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class ParaBankBaseTest {
-    public WebDriver driver;
-    private Properties properties;
-    protected String projectDir = System.getProperty("user.dir");
+    public Properties properties;
+    public String projectDir = System.getProperty("user.dir");
     public FileInputStream inputStream;
     public String browserName;
-    protected String url;
+    public String url;
     public BasePage page;
+    public static WebDriver driver;
 
     @BeforeMethod
     public void setUp() {

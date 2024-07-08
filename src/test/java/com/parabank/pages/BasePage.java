@@ -10,11 +10,11 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BasePage extends Page {
-    public WebDriver driver;
+//    public static WebDriver driver;
 
     //Constructor
     public BasePage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     //Input value in Input field
