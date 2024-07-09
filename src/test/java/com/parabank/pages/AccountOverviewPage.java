@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 
 public class AccountOverviewPage extends BasePage {
+
     public AccountOverviewPage(WebDriver driver) {
         super(driver);
     }
@@ -17,6 +18,15 @@ public class AccountOverviewPage extends BasePage {
             }
         } catch (Exception e) {
             System.out.println(e + " " + successMessage + "Element not found");
+          
+    public String validateSuccessfulMessage() {
+        try {
+            if (successMessage.equals(BasePage.successfulMessageOverviewPage)) {
+                return successfulMessageOverviewPage;
+            }
+        }
+        catch (Exception e){
+            System.out.println(e + "Successful message not found");
         }
         return null;
     }
