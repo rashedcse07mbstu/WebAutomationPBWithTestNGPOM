@@ -24,7 +24,7 @@ public class ParaBankLoginPage extends BasePage {
 
     public AccountOverviewPage clickLoginBtn() {
         clickBtn(loginBtn);
-        return new AccountOverviewPage();
+        return new AccountOverviewPage(driver);
     }
 
     @Override
