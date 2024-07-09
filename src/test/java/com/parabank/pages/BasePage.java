@@ -10,7 +10,8 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class BasePage extends Page {
-//    public static WebDriver driver;
+    public static WebDriver driver;
+    public static String successfulMessageOnAccountOverviewPage = "Your account was created successfully. You are now logged in.";
 
     //Constructor
     public BasePage(WebDriver driver) {
