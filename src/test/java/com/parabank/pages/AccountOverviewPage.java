@@ -18,15 +18,6 @@ public class AccountOverviewPage extends BasePage {
             }
         } catch (Exception e) {
             System.out.println(e + " " + successMessage + "Element not found");
-          
-    public String validateSuccessfulMessage() {
-        try {
-            if (successMessage.equals(BasePage.successfulMessageOverviewPage)) {
-                return successfulMessageOverviewPage;
-            }
-        }
-        catch (Exception e){
-            System.out.println(e + "Successful message not found");
         }
         return null;
     }
