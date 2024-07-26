@@ -10,7 +10,7 @@ public class ParaBankRegisterPage extends BasePage {
 
     By customerFirstNameEle = By.id("customer.firstName");
     By customerLastNameEle = By.id("customer.lastName");
-    By customerAddressEle = By.id("customer.address.street");
+    By customerAddressStreetEle = By.id("customer.address.street");
     By customerCityEle = By.id("customer.address.city");
     By customerStateEle = By.id("customer.address.state");
     By customerZipCodeEle = By.id("customer.address.zipCode");
@@ -19,6 +19,7 @@ public class ParaBankRegisterPage extends BasePage {
     By customerUserNameEle = By.id("customer.username");
     By customerPasswordEle = By.id("customer.password");
     By customerConfirmPassEle = By.id("repeatedPassword");
+    By registerBtnEle = By.cssSelector("input.button[value='Register']");
 
     public ParaBankRegisterPage fillFirstNameField(String firstName) {
         driver.findElement(customerFirstNameEle).sendKeys(firstName);
@@ -30,8 +31,8 @@ public class ParaBankRegisterPage extends BasePage {
         return this;
     }
 
-    public ParaBankRegisterPage fillAddressField(String address) {
-        driver.findElement(customerAddressEle).sendKeys((address));
+    public ParaBankRegisterPage fillAddressStreetField(String addressStreet) {
+        driver.findElement(customerAddressStreetEle).sendKeys((addressStreet));
         return this;
     }
 
@@ -76,8 +77,8 @@ public class ParaBankRegisterPage extends BasePage {
     }
 
     public ParaBankHomePage clickRegisterBtn() {
-        driver.findElement(By.cssSelector("input.button[value='Register']")).click();
-        return new ParaBankHomePage();
+        driver.findElement(registerBtnEle).click();
+        return new ParaBankHomePage(driver);
     }
 
 }
