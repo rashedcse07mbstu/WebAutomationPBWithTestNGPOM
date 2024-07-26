@@ -6,7 +6,7 @@ import com.parabank.pages.ParaBankLoginPage;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class AccountOverviewTest extends ParaBankBaseTest{
+public class AccountOverviewTest extends ParaBankBaseTest {
     AccountOverviewPage accountOverviewPage;
     ParaBankLoginPage paraBankLoginPage;
 
