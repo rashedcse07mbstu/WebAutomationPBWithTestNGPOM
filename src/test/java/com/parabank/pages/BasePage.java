@@ -13,8 +13,7 @@ public class BasePage extends Page {
     public static WebDriver driver;
     public static String successfulMessageOnAccountOverviewPage = "Your account was created successfully. You are now logged in.";
     public static String successfulMessageOverviewPage= "Your account was created successfully. You are now logged in.";
-
-
+    
     //Constructor
     public BasePage(WebDriver driver) {
         super(driver);
