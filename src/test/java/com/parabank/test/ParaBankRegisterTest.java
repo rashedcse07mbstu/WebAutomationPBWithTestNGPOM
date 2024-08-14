@@ -78,5 +78,4 @@ public class ParaBankRegisterTest extends ParaBankBaseTest {
         return cellData;
     }
 
-
 }
