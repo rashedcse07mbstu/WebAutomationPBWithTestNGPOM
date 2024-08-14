@@ -52,14 +52,23 @@ public class ParaBankRegisterTest extends ParaBankBaseTest {
         Assert.assertEquals(paraBankHomePage.getWelcomeParaBnkText(), ParaBankHomePage.WelcomeParaBankMessage);
     }
 
-    public void readDataFromExcel() throws IOException {
-        File file = new File("E:\\WebAutomationPBWithTestNGPOM\\src\\test\\resources\\TestData.xlsx");
-        FileInputStream fileInputStream = new FileInputStream(file);
-        XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
-        XSSFSheet xssfSheet = workbook.getSheetAt(0);
-        String cellValue = xssfSheet.getRow(0).getCell(0).getStringCellValue();
-        System.out.println("Cell value is: " + cellValue);
-        workbook.close();
-        fileInputStream.close();
+    String cellData; //store cell value
+
+    //Read Data From Excel using Java Generic Concept
+    public String readDataFromExcel(String excelFilePath, int sheetNumber, int rowNumber, int colNumber) throws IOException {
+        try {
+            File file = new File(excelFilePath);
+            FileInputStream fileInputStream = new FileInputStream(file);
+            XSSFWorkbook workbook = new XSSFWorkbook(fileInputStream);
+            XSSFSheet xssfSheet = workbook.getSheetAt(sheetNumber);
+            cellData = xssfSheet.getRow(rowNumber).getCell(colNumber).getStringCellValue();
+            System.out.println("Cell value is: " + cellData);
+            workbook.close();
+            fileInputStream.close();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return cellData;
     }
+
 }
