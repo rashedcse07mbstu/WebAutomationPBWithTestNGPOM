@@ -5,6 +5,7 @@ import com.parabank.pages.ParaBankHomePage;
 import com.parabank.pages.ParaBankLoginPage;
 import com.parabank.pages.ParaBankRegisterPage;
 import com.thedeanda.lorem.LoremIpsum;
+import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
 import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
@@ -68,6 +69,9 @@ public class ParaBankRegisterTest extends ParaBankBaseTest {
             for (int i = 0; i < rowCount; i++) {
                 XSSFRow row = xssfSheet.getRow(i);
                 int cellCount = row.getPhysicalNumberOfCells();
+                for (int j = 0; j < cellCount; j++) {
+                    XSSFCell cell = row.getCell(j);
+                }
             }
 
             workbook.close();
